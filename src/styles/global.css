@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background: #02020E;
+  --background-content: #101010;
+  --primary: #1C63FF;
+  --white: #FFFFFF;
+  --input-background: #130F16;
+  --input-stroke: #1A151E;
+  --placeholder: #717983;
+}
+
 html {
   font-size: 62.5%;
 
@@ -23,6 +33,7 @@ body {
 body, input, textarea, button {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  background: var(--background)
 }
 
 a {

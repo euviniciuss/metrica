@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  
+  flex-direction: column;
+  gap: 6.6rem
+}
+
+.logo-container img {
+  width: 112px;
+  height: 112px;
+}
+
+.title {
+  font-size: 5.4rem;
+  line-height: 6.4rem;
+  color: var(--white);
+}
+
+.title span {
+  color: var(--primary);
+}
