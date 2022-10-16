@@ -43,6 +43,7 @@ export function Login() {
               Não tem conta? <a href="./">Cadastre-se</a>
             </span>
           </form>
+          <div className="shadow" />
         </section>
       </div>
     </main>
