@@ -1,0 +1,44 @@
+.fieldset-content {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.2rem;
+  border: none;
+  color: var(--white);
+}
+
+.fieldset-content label {
+  width: 100%;
+  
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.fieldset-content input {
+  width: 100%;
+  
+  font-size: 1.4rem;
+  color: var(--white);
+  font-weight: 600;
+  padding: 1.2rem 1.8rem;
+
+  background: var(--input-background);
+  border: 1.4px solid var(--input-stroke);
+  border-radius: 4px;
+  margin-bottom: 1.4rem;
+  font-weight: 400;
+  transition: border-color 0.35s;
+}
+
+.fieldset-content input::placeholder {
+  color: var(--placeholder);
+}
+
+.fieldset-content input:focus {
+  border-color: var(--primary);
+}

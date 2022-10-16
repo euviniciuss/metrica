@@ -1,3 +1,5 @@
+import { Input } from '../../components/shared/input'
+
 import Logo from '../../assets/logo_metrica.svg'
 
 import './styles.css'
@@ -16,15 +18,21 @@ export function Login() {
 
         <section className="form-container">
           <form className="form-content">
-            <fieldset className="fieldset-content">
-              <label>E-mail</label>
-              <input type="text" placeholder='Digite seu email'/>
-            </fieldset>
-            
-            <fieldset className="fieldset-content">
-              <label>Senha</label>
-              <input type="password" placeholder='Digite sua senha'/>
-            </fieldset>
+            <Input 
+              key="email" 
+              id="email"
+              label="E-mail" 
+              type="email" 
+              placeholder="Digite seu email"
+            />
+
+            <Input 
+              key="password" 
+              id="password"
+              label="Senha" 
+              type="password" 
+              placeholder="Digite sua senha"
+            />
 
             <a className="forgot-password" href="./">Esqueci minha senha</a>
 
