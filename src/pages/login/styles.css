@@ -67,30 +67,14 @@
   color: var(--primary);
 }
 
-.login-button {
-  width: 100%;
-  background: var(--primary);
-  color: var(--background);
-  font-weight: 600;
-
-  padding: 1.5rem 1.8rem;
-  border-radius: 4px;
-  margin-top: 2rem;
-  transition: filter 0.2s;
-}
-
-.login-button:hover {
-  filter: brightness(0.8);
-}
-
 .register-link {
   width: 100%;
 
   display: flex;
-  flex-direction: center;
+  justify-content: center;
   align-items: center;
   gap: 4px;
-  margin-top: 3rem;
+  margin-top: 4.5rem;
   
   color: var(--white);
   font-size: 1.4rem;

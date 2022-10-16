@@ -1,4 +1,5 @@
 import { Input } from '../../components/shared/input'
+import { Button } from '../../components/shared/button'
 
 import Logo from '../../assets/logo_metrica.svg'
 
@@ -36,7 +37,7 @@ export function Login() {
 
             <a className="forgot-password" href="./">Esqueci minha senha</a>
 
-            <button className="login-button">Entrar</button>
+            <Button title="Entrar" />
 
             <span className="register-link">
               Não tem conta? <a href="./">Cadastre-se</a>
