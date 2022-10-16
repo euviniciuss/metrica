@@ -1,19 +1,33 @@
 .container {
-  display: flex;
-  justify-content: space-around;
-
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 960px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12rem;
 }
 
 .logo-container {
+  width: 40%;
+
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   
-  flex-direction: column;
-  gap: 6.6rem
+  gap: 6.6rem;
+  max-width: 48rem;
 }
 
 .logo-container img {
@@ -22,11 +36,111 @@
 }
 
 .title {
-  font-size: 5.4rem;
+  font-size: 5.1rem;
   line-height: 6.4rem;
   color: var(--white);
 }
 
 .title span {
   color: var(--primary);
+}
+
+.form-container {
+  width: 60%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-content {
+  width: 100%;
+
+  padding: 6.4rem;
+  border-radius: 0.5rem;
+  background: var(--background-content)
+}
+
+.fieldset-content {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.2rem;
+  border: none;
+  color: var(--white);
+}
+
+.fieldset-content label {
+  width: 100%;
+  
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.fieldset-content input {
+  width: 100%;
+  
+  font-size: 1.4rem;
+  color: var(--white);
+  font-weight: 600;
+  padding: 1.2rem 1.8rem;
+
+  background: var(--input-background);
+  border: 1.4px solid var(--input-stroke);
+  border-radius: 4px;
+  margin-bottom: 1.4rem;
+  font-weight: 400;
+}
+
+.fieldset-content input::placeholder {
+  color: var(--placeholder);
+}
+
+.fieldset-content input:focus {
+  border-color: var(--primary);
+}
+
+.forgot-password {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.login-button {
+  width: 100%;
+  background: var(--primary);
+  color: var(--background);
+  font-weight: 600;
+
+  padding: 1.5rem 1.8rem;
+  border-radius: 4px;
+  margin-top: 2rem;
+  transition: filter 0.2s;
+}
+
+.login-button:hover {
+  filter: brightness(0.8);
+}
+
+.register-link {
+  width: 100%;
+
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  gap: 4px;
+  margin-top: 3rem;
+  
+  color: var(--white);
+  font-size: 1.4rem;
+}
+
+.register-link a {
+  color: var(--primary);
+  font-weight: 600;
 }

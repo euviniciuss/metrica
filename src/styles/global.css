@@ -16,6 +16,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
 
   @media (max-width: 1080px) {
     font-size: 56.25%;
@@ -33,13 +34,19 @@ body {
 body, input, textarea, button {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  background: var(--background)
+  background: var(--background);
+  border: none;
 }
 
 a {
   text-decoration: none;
-  color: var(--black);
+  color: var(--white);
   font-family: 'Roboto', sans-serif;
+  transition: filter 0.2s;
+}
+
+a:hover {
+  filter: brightness(0.8);
 }
 
 h1, h2, h3, h4, h5, h6, strong {
