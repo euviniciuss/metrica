@@ -7,8 +7,11 @@
 :root {
   --background: #02020E;
   --background-content: #101010;
+  --background-table: #101318;
   --primary: #1C63FF;
+  --text: #fcffff;
   --white: #FFFFFF;
+  --description: #717078;
   --input-background: #130F16;
   --input-stroke: #1A151E;
   --placeholder: #717983;
@@ -29,6 +32,7 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
+  color: var(--white);
 }
 
 body, input, textarea, button {
