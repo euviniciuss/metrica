@@ -1,3 +1,7 @@
+import { FormEvent } from 'react'
+
+import { redirect } from 'react-router-dom'
+
 import { Input } from '../../components/shared/input'
 import { Button } from '../../components/shared/button'
 
@@ -6,6 +10,15 @@ import Logo from '../../assets/logo_metrica.svg'
 import './styles.css'
 
 export function Login() {
+
+  function handleSubmitLogin(event: FormEvent) {
+    event.preventDefault()
+
+    console.log("clicou")
+
+    return redirect("/stock");
+  }
+
   return(
     <main className="container">
       <div className="content">
@@ -18,7 +31,7 @@ export function Login() {
         </section>
 
         <section className="form-container">
-          <form className="form-content">
+          <form className="form-content" onSubmit={handleSubmitLogin}>
             <Input 
               key="email" 
               id="email"
@@ -37,7 +50,7 @@ export function Login() {
 
             <a className="forgot-password" href="./">Esqueci minha senha</a>
 
-            <Button title="Entrar" />
+            <Button title="Entrar" type="submit" />
 
             <span className="register-link">
               Não tem conta? <a href="./">Cadastre-se</a>
