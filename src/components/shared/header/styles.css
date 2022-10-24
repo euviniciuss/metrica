@@ -1,0 +1,40 @@
+.header-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.header-container img {
+  width: 70px;
+  height: 70px;
+}
+
+.container-user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container-user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.container-user-info .info-user {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.container-user-info .info-user h4 {
+  font-size: 1.4rem;
+  color: var(--white);
+}
+
+.container-user-info .info-user p {
+  font-size: 1.1rem;
+  color: var(--description);
+}
