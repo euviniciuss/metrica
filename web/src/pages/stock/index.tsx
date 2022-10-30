@@ -1,7 +1,11 @@
+import { useEffect, useState } from 'react'
+
 import { Header } from '../../components/shared/header'
 
 import Pencil from '../../assets/pencil.svg'
 import Trash from '../../assets/trash.svg'
+
+import { api } from '../../services/api'
 
 import './styles.css'
 
@@ -12,23 +16,11 @@ type Products = {
 }
 
 export function Stock() {
-  const products: Products[] = [
-    {
-      id: 1,
-      name: "Iphone 13 plus",
-      price: "R$ 5.700,00"
-    },
-    {
-      id: 2,
-      name: "Samsung Galaxy S22",
-      price: "R$ 2.800,00"
-    },
-    {
-      id: 3,
-      name: "Motorola G2 Plus",
-      price: "R$ 3.000,00"
-    },
-  ]
+  const [products, setProducts] = useState<Products[]>([])
+
+  useEffect(() => {
+    api.get('/products').then(response => setProducts(response.data))
+  }, [])
 
   return(
    <main className="container-stock">
