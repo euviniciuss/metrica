@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 
+import { Link } from 'react-router-dom'
+
 import { Header } from '../../components/shared/header'
 
 import Pencil from '../../assets/pencil.svg'
@@ -12,7 +14,7 @@ import './styles.css'
 type Products = {
   id: number,
   name: string,
-  price: string
+  amount: number
 }
 
 export function Stock() {
@@ -29,7 +31,9 @@ export function Stock() {
 
       <section className="info-container">
         <h1>Listagem de produtos</h1>
-        <button>Adicionar produto</button>
+        <Link to="/product/create">
+          <button>Adicionar produto</button>
+        </Link>
       </section>
 
       <section className="list-container">
@@ -55,7 +59,7 @@ export function Stock() {
               <tr key={product.id} >
                 <td>{product.id}</td>
                 <td>{product.name}</td>
-                <td>{product.price}</td>
+                <td>{product.amount}</td>
                 <td>
                   <a className="edit-icon" href="/" title="Editar item">
                     <img src={Pencil} alt="Ícone de caneta branca" />
