@@ -15,7 +15,7 @@ export function Login() {
   function handleSubmitLogin(event: FormEvent) {
     event.preventDefault()
 
-    navigate("product/stock")
+    navigate("/product")
   }
 
   return(
