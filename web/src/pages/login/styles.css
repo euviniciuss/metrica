@@ -1,4 +1,4 @@
-.container {
+.login-container {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.content {
+.login-content {
   width: 100%;
   max-width: 960px;
   
@@ -45,7 +45,7 @@
   color: var(--primary);
 }
 
-.form-container {
+.form-login-container {
   z-index: 5;
   width: 60%;
 
@@ -54,7 +54,7 @@
   align-items: center;
 }
 
-.form-content {
+.form-login-content {
   z-index: 5;
 
   width: 100%;

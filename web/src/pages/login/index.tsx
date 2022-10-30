@@ -15,12 +15,12 @@ export function Login() {
   function handleSubmitLogin(event: FormEvent) {
     event.preventDefault()
 
-    navigate("/stock")
+    navigate("product/stock")
   }
 
   return(
-    <main className="container">
-      <div className="content">
+    <main className="login-container">
+      <div className="login-content">
         <section className="logo-container">
           <img src={Logo} alt="Logo da metrica possuindo 3 linhas azuis" />
           <h1 className="title">
@@ -29,8 +29,8 @@ export function Login() {
           </h1>
         </section>
 
-        <section className="form-container">
-          <form className="form-content" onSubmit={handleSubmitLogin}>
+        <section className="form-login-container">
+          <form className="form-login-content" onSubmit={handleSubmitLogin}>
             <Input 
               key="email" 
               id="email"
